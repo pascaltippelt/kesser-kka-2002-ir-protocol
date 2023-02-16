@@ -1,5 +1,5 @@
 # KESSER KKA-2002 infrared remote protocol
-Describes the infrared remote protocol of a KESSLER KKA-2002 air conditioning unit.
+Describes the infrared remote protocol of a KESSER KKA-2002 air conditioning unit.
 
 ## Turn on / off
 
