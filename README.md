@@ -3,28 +3,31 @@ Describes the infrared remote protocol of a KESSER KKA-2002 air conditioning uni
 
 ## Turn on / off
 
-Protocol=NEC Address=0x0 Command=0x46 Raw-Data=0xB946FF00 32 bits LSB first
+Protocol=NEC Address=0xFF00 Command=0xB946 Raw-Data=0xB946FF00 32 bits LSB first
 
 ## Temperature
 ### Up
-Protocol=NEC Address=0x0 Command=0x7 Raw-Data=0xF807FF00 32 bits LSB first
+Protocol=NEC Address=0xFF00 Command=0xF807 Raw-Data=0xF807FF00 32 bits LSB first
 
 ### Down
-Protocol=NEC Address=0x0 Command=0xC Raw-Data=0xF30CFF00 32 bits LSB first
+Protocol=NEC Address=0xFF00 Command=0xF30C Raw-Data=0xF30CFF00 32 bits LSB first
 
 ## Mode
-Protocol=NEC Address=0x0 Command=0x9 Raw-Data=0xF609FF00 32 bits LSB first
+Protocol=NEC Address=0xFF00 Command=0xF609 Raw-Data=0xF609FF00 32 bits LSB first
 
 (Toggles through all modes available)
 
 ## Timer
-Protocol=NEC Address=0x0 Command=0x42 Raw-Data=0xBD42FF00 32 bits LSB first
+Protocol=NEC Address=0xFF00 Command=0xDB42 Raw-Data=0xBD42FF00 32 bits LSB first
 
 ## Sleep
-Protocol=NEC Address=0x0 Command=0x1C Raw-Data=0xE31CFF00 32 bits LSB first
+Protocol=NEC Address=0xFF00 Command=0xE31C Raw-Data=0xE31CFF00 32 bits LSB first
 
 ## Swing
-Protocol=NEC Address=0x0 Command=0x4A Raw-Data=0xB54AFF00 32 bits LSB first
+Protocol=NEC Address=0xFF00 Command=0xB54A Raw-Data=0xB54AFF00 32 bits LSB first
+
+## Speed
+Received=NEC Address=0xFF00 Command=0xA15E Raw-Data=0xA15EFF00 32 bits LSB first
 
 Thanks to https://github.com/Arduino-IRremote/Arduino-IRremote, helping to decode the ir protocoll.
 
